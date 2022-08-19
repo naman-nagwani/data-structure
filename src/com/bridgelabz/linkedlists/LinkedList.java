@@ -77,12 +77,18 @@ public class LinkedList<T> {
         if (head.equals(null))
             return null;
         else {
+            T res;
+            if(head.equals(tail)) {
+                res= head.data;
+                head=null;
+                tail=null;
+                return res;
+            }
             Node<T> temp = head;
             while(temp.next != tail){
                 temp = temp.next;
             }
-            System.out.println(temp.data);
-            T res = tail.data;
+            res = tail.data;
             tail = temp;
             tail.next = null;
             return res;
