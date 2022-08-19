@@ -7,5 +7,12 @@ public class StackMain {
         stack1.push(30);
         stack1.push(56);
         stack1.printStack();
+
+        while (!stack1.peak().equals(null)) {
+            System.out.println("Data Peak");
+            System.out.println(stack1.peak());
+            System.out.println("Data Pop");
+            System.out.println("Data Popped : " + stack1.pop());
+        }
     }
 }
