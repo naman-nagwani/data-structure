@@ -1,8 +1,8 @@
 package com.bridgelabz.linkedlists;
 
 public class LinkedList<T> {
-    Node<T> head;
-    Node<T> tail;
+    public Node<T> head;
+    public Node<T> tail;
 
     public void push(T data) {
         Node<T> newNode = new Node(data);
